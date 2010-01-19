@@ -1,0 +1,1 @@
+from cookbook.recipes.models import Recipe, Ingredient, Instructionfrom django.contrib import adminadmin.site.register((Recipe, Ingredient, Instruction))
