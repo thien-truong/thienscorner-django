@@ -1,0 +1,1 @@
+from django.conf.urls.defaults import *urlpatterns = patterns('',	#recipes -- That is what Thien call it to represent the recipe list	#        -- What goes on the url	(r'^recipes/$', 'cookbook.recipes.views.recipe_list'),)
