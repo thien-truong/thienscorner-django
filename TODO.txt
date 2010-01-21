@@ -1,0 +1,2 @@
+order instruction fields for admin
+make instructions and ingredient editable inline on recipe page in admin
