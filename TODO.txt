@@ -1,2 +1,4 @@
 order instruction fields for admin
 make instructions and ingredient editable inline on recipe page in admin
+implement template inheritance and a navigation system
+create better tests including test database objects
