@@ -1,13 +1,14 @@
 {% extends 'base.html' %}
 
 {% block body %}
-<nav>
-	{% block nav %}
-	{% endblock %}
-</nav>
+	<nav>
+		{% block nav %}
+			<a href='{% url cookbook.recipes.views.recipe_list %}'>Recipes</a>
+		{% endblock %}
+	</nav>
 
-<section>
-	{% block content %}
-	{% endblock %}
-</section>
+	<section>
+		{% block content %}
+		{% endblock %}
+	</section>
 {% endblock %}
