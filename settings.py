@@ -1,4 +1,4 @@
-# Django settings for cookbook project.
+# Django settings for thienscorner project.
 
 DEBUG = True
 TEMPLATE_DEBUG = DEBUG
@@ -63,7 +63,7 @@ MIDDLEWARE_CLASSES = (
     'django.contrib.auth.middleware.AuthenticationMiddleware',
 )
 
-ROOT_URLCONF = 'cookbook.urls'
+ROOT_URLCONF = 'thienscorner.urls'
 
 TEMPLATE_DIRS = (
     # Put strings here, like "/home/html/django_templates" or "C:/www/django/templates".
@@ -76,15 +76,12 @@ INSTALLED_APPS = (
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.sites',
-	"cookbook.recipes",
-	"django.contrib.admin",
+    "django.contrib.admin",
+    "thienscorner.cookbook",
 )
-
-
 
 try:
     from settings_local import *
 except ImportError as importError:
     print "You haven't yet prepared your project for version control. "\
           "Please follow the instructions in settings_local.py.template."
-

@@ -5,9 +5,10 @@ from django.conf import settings
 from django.contrib import admin
 admin.autodiscover()
 
+
 urlpatterns = patterns('',
-    # Recipes app
-    (r'^cookbook/', include('cookbook.recipes.urls')),
+    # Cookbook app
+    (r'^cookbook/', include('thienscorner.cookbook.urls')),
 
     # Uncomment the admin/doc line below and add 'django.contrib.admindocs' 
     # to INSTALLED_APPS to enable admin documentation:
@@ -16,6 +17,7 @@ urlpatterns = patterns('',
     # Uncomment the next line to enable the admin:
     (r'^admin/', include(admin.site.urls)),
 )
+
 
 if settings.DEBUG:
     # Serve static media.

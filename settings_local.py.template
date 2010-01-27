@@ -1,5 +1,3 @@
-
-
 # Create a new file named settings_local.py in the same directory 
 # as settings.py. Copy the contents of this file to it and modify it to
 # suit the environment. Make sure you do *not* commit settings_local.py
@@ -50,4 +48,3 @@ TEMPLATE_DIRS = (
     # Always use forward slashes, even on Windows.
     # Don't forget to use absolute paths, not relative paths.
 )
-

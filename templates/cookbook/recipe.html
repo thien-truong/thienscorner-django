@@ -1,8 +1,8 @@
-{% extends 'recipes/base_recipes.html' %}
+{% extends 'cookbook/base_recipes.html' %}
 
 {% block title %}Recipe: {{ object.name }}{% endblock %}
 
-{% block content %}	
+{% block content %}
 	<h1>{{ object.name }}</h1>
 	<br />
 	<img src="{{ object.picture.url }}" alt="{{ object.name }}" />
@@ -13,7 +13,7 @@
 			{# for each ingredient for a recipe #}
 			{% for ingredient in object.ingredient_set.all %}
 				<li>{{ ingredient }}</li>
-			{% endfor %}	
+			{% endfor %}
 		</ul>
 	{% endif %}
 	<br />
