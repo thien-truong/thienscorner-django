@@ -1,11 +1,14 @@
 {% extends 'base.html' %}
 
 {% block body %}
-	<nav>
+	<div>
 		{% block nav %}
-			<a href='{% url thienscorner.cookbook.views.recipe_list %}'>Recipes</a>
+			<ul class="navul">
+				<li class="navli"><a href="" class="nava">Home</a></li>
+				<li class="navli"><a href="" class="nava">Food/Drink</a><li>
+			</ul>
 		{% endblock %}
-	</nav>
+	</div>
 
 	<section>
 		{% block content %}

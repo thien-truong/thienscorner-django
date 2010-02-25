@@ -3,26 +3,27 @@
 {% block title %}Recipe: {{ object.name }}{% endblock %}
 
 {% block content %}
-	<h1>{{ object.name }}</h1>
-	<br />
-	<img src="{{ object.picture.url }}" alt="{{ object.name }}" />
-	<br />
-	<h2>Ingredients</h2>
-	{% if object.ingredient_set %}
-		<ul type="square">
-			{# for each ingredient for a recipe #}
-			{% for ingredient in object.ingredient_set.all %}
-				<li>{{ ingredient }}</li>
-			{% endfor %}
-		</ul>
-	{% endif %}
-	<br />
-	<h2>Directions</h2>
-	{% if object.instruction_set %}
-		<ol>
-			{% for instruction in object.instruction_set.all %}
-				<li>{{ instruction.instruction }}</li>
-			{% endfor %}	
-		</ol>
-	{% endif %}
+	<a href='{% url thienscorner.cookbook.views.recipe_list %}' class="recipeslink"><h1>Recipes</h1></a>
+	<article class="recipecontent">
+		<img src="{{ object.picture.url }}" alt="{{ object.name }}" class="img"/>
+		<h1>{{ object.name }}</h1>
+		<h2>Ingredients</h2>
+		{% if object.ingredient_set %}
+			<ul type="square">
+				{# for each ingredient for a recipe #}
+				{% for ingredient in object.ingredient_set.all %}
+					<li>{{ ingredient }}</li>
+				{% endfor %}
+			</ul>
+		{% endif %}
+		<br />
+		<h2>Directions</h2>
+		{% if object.instruction_set %}
+			<ol>
+				{% for instruction in object.instruction_set.all %}
+					<li>{{ instruction.instruction }}</li>
+				{% endfor %}
+			</ol>
+		{% endif %}
+	</article>
 {% endblock %}
