@@ -1,10 +1,16 @@
-from django.conf.urls.defaults import *
 from django.conf import settings
+from django.conf.urls.defaults import (
+    include,
+    handler404,
+    handler500,
+    patterns,
+)
 
 # Uncomment the next two lines to enable the admin:
 from django.contrib import admin
 admin.autodiscover()
 
+handler404, handler500  # Keep PyFlakes happy.
 
 urlpatterns = patterns('',
     # Cookbook app
