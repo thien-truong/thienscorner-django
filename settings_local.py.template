@@ -1,4 +1,4 @@
-# Create a new file named settings_local.py in the same directory 
+# Create a new file named settings_local.py in the same directory
 # as settings.py. Copy the contents of this file to it and modify it to
 # suit the environment. Make sure you do *not* commit settings_local.py
 # into version control. You can use settings_local.py as a place

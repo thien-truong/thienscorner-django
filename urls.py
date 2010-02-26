@@ -10,7 +10,7 @@ urlpatterns = patterns('',
     # Cookbook app
     (r'^cookbook/', include('thienscorner.cookbook.urls')),
 
-    # Uncomment the admin/doc line below and add 'django.contrib.admindocs' 
+    # Uncomment the admin/doc line below and add 'django.contrib.admindocs'
     # to INSTALLED_APPS to enable admin documentation:
     # (r'^admin/doc/', include('django.contrib.admindocs.urls')),
 
@@ -26,7 +26,7 @@ if settings.DEBUG:
         (r'^static/(?P<path>.*)$', 'django.views.static.serve',
          {'document_root': settings.STATIC_DOC_ROOT}),
     )
-    
+
     # Serve uploaded media.
     # The URL regex for this pattern should be related to settings.MEDIA_URL.
     urlpatterns += patterns(
