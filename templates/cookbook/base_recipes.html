@@ -1,17 +1,17 @@
 {% extends 'base.html' %}
 
 {% block body %}
-	<div>
+	<nav class="nav">
 		{% block nav %}
 			<ul class="navul">
 				<li class="navli"><a href="" class="nava">Home</a></li>
+				<li class="navli"><a href="" class="nava">Journal</a></li>
 				<li class="navli"><a href="" class="nava">Food/Drink</a></li>
+				<li class="navli"><a href="" class="nava">Art</a></li>
 			</ul>
 		{% endblock %}
-	</div>
+	</nav>
 
-	<section>
-		{% block content %}
-		{% endblock %}
-	</section>
+	{% block content %}
+	{% endblock %}
 {% endblock %}
